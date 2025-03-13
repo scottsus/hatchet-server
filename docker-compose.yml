@@ -1,0 +1,11 @@
+services:
+  arianna:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    platform: linux/amd64
+    volumes:
+      - ./src:/app/src
+      - ./data:/app/data
+    working_dir: /app
+    command: tail -f /dev/null
