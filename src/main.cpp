@@ -27,8 +27,8 @@ int main() {
     signal(SIGINT, signalHandler);
     
     // ⚙️ settings
-    std::string csv_file = "./data/custom/input_complete.csv";
-    std::string output_file = "./data/custom/processed_coordinates.txt";
+    std::string csv_file = "./data/03-13/level.csv";
+    std::string output_file = "./data/03-13/arianna_coordinates.txt";
     int port = 8080;
 
     std::cout << "🔥 Hatchet Server" << std::endl;

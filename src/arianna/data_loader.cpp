@@ -17,7 +17,7 @@ std::vector<std::string> DataLoader::loadData() {
 
     std::ifstream infile(csv_file_);
     if (!infile.is_open()) {
-        std::cerr << "Error opening CSV file: " << csv_file_ << std::endl;
+        std::cerr << "error opening CSV file: " << csv_file_ << std::endl;
         return hex_data;
     }
 
