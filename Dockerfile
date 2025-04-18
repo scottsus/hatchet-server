@@ -1,12 +1,17 @@
 FROM ubuntu:20.04
 
-RUN apt update -y && \
-    apt install -y g++ build-essential && \
-    apt-get clean && \
-    rm -rf /var/lib/apt/lists/*
-
 WORKDIR /app
+
+RUN apt-get update && apt-get install -y \
+    libicu66 \
+    libssl1.1 \
+    && rm -rf /var/lib/apt/lists/*
 
 COPY . .
 
-CMD ["/bin/bash"]
+RUN chmod +x /app/lib/AriannaSrv/AriannaSrv
+
+EXPOSE 8080
+
+WORKDIR /app/lib/AriannaSrv
+CMD ["./AriannaSrv", "TcpIp"]

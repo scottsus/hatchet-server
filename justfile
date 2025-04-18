@@ -3,28 +3,16 @@
 default:
     @just --list
 
-# Start Docker container and run the server
 start:
-    docker-compose up -d
-    docker-compose exec arianna bash -c 'make run'
+    docker build --platform=linux/amd64 -t arianna-server .
+    docker run -p 8080:13000 arianna-server
 
-# Build project
-build:
-    docker-compose up -d
-    docker-compose exec arianna bash -c 'make'
-
-# Run test client
 test:
-    docker-compose up -d
-    docker-compose exec arianna bash -c 'make test_client'
+    python tcp/client.py
 
-# Clean build artifacts
 clean:
-    docker-compose exec arianna bash -c 'make clean'
+    docker rm $(docker ps -a -q --filter "ancestor=arianna-server")
+    docker image rm arianna-server
 
-# Stop Docker container
 stop:
-    docker-compose down
-
-# Rebuild project from scratch
-rebuild: clean build
+    docker stop $(docker ps -q --filter "ancestor=arianna-server")

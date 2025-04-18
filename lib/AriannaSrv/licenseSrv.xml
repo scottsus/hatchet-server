@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<License>
+  <Id>05d7093d-0e0e-4be3-963e-4b05980fd35f</Id>
+  <Type>Standard</Type>
+  <Expiration>Sat, 18 Oct 2025 06:58:42 GMT</Expiration>
+  <Quantity>1</Quantity>
+  <LicenseAttributes>
+    <Attribute name="HardwareId">CAF90169EEFA5F807D577486B9F795AB86AE2983C5C20806CFF959117E90AF18</Attribute>
+    <Attribute name="PublicKey">xRICLFqgvX+/EnAZ4ProhOE7QCKx4j2fiKcmE7PhSe635+W/sjft2IWT6mpekIoSqRoUqkEzs5Nj7yd4JbtzQcMBwJACsJdd/cpxm8X8kpWilfHDc2144RR5UTrhK9/IEZkYArPEEO6sIB8oBjOmdRX6oM9nsZeFBhbwTA+A2JalxVTluW7qQWUxIgTkV2qzPC8FPDU7Juic2nG21K/va3EjvPKaM9AfN7mvOI9Gybh57YCwI2t3/58vCqBrLfPMpW2HSllYEk9LzkGfGr3AzSvzs1TOAKkG9SW7dKaU/ic=</Attribute>
+  </LicenseAttributes>
+  <Customer>
+    <Name></Name>
+    <Email></Email>
+  </Customer>
+  <Signature>MIGHAkIAhOMpTYvpqWAyhKn9djU00RhYNMaVhl7lsNKxYPbURDT5lsMhGFS0ahdRcRR0TkKwZWOvwGN6lF3vNsbAtsRuKwcCQTN21F7Hn2EqIANC6gSnzL4ceUmnWV06bSb8iZHjGduLIMjJ3MOMAhQyGK3TBoz6nPkXv+ckzkrQ4Xe1EAoXHtiQ</Signature>
+</License>
