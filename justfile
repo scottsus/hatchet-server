@@ -3,8 +3,10 @@
 default:
     @just --list
 
-start:
+build:
     docker build --platform=linux/amd64 -t arianna-server .
+
+start:
     docker run -p 8080:13000 arianna-server
 
 test:
